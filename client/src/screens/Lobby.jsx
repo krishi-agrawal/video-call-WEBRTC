@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSocket } from "../context/SocketProvider";
+import "./Lobby.css";
 
 const LobbyScreen = () => {
   const [email, setEmail] = useState("");
@@ -31,31 +32,23 @@ const LobbyScreen = () => {
       socket.off("room:join", handleJoinRoom);
     };
   }, [socket, handleJoinRoom]);
-
-  return (
-    <div>
-      <h1>Lobby</h1>
-      <form onSubmit={handleSubmitForm}>
-        <label htmlFor="email">Email ID</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <br />
-        <label htmlFor="room">Room Number</label>
-        <input
-          type="text"
-          id="room"
-          value={room}
-          onChange={(e) => setRoom(e.target.value)}
-        />
-        <br />
-        <button>Join</button>
-      </form>
+  return(
+    <div className="form">
+    <div className="title">Welcome</div>
+    <div className="subtitle">Join a Room!</div>
+    <div className="input-container ic1">
+      <input id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input" type="email" placeholder=" " />
+      <div className="cut"></div>
+      <label htmlFor="email" className="placeholder">Email</label>
     </div>
-  );
+    <div className="input-container ic2">
+      <input id="room" value={room} onChange={(e) => setRoom(e.target.value)}  className="input" type="text" placeholder=" " />
+      <div className="cut cut-short"></div>
+      <label htmlFor="room" className="placeholder">Room</label>
+    </div>
+    <button type="text" className="submit" onClick={handleSubmitForm}>submit</button>
+  </div>
+  )
 };
 
 export default LobbyScreen;
