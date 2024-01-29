@@ -1,7 +1,9 @@
 <h1>Video Call Application</h1>
 <p>This is a video call application built using WebRTC. Socket.io is used to create multiple video chat rooms. Used ReactJs and Context API for frontend.</p>
-<img width="958" alt="Screenshot 2023-12-26 150109" src="https://github.com/krishi-agrawal/video-call-WEBRTC/assets/129549818/823e8182-78d2-4a27-890d-8bdcd0385cf1">
-<img width="960" alt="Screenshot 2023-12-26 150017" src="https://github.com/krishi-agrawal/video-call-WEBRTC/assets/129549818/c684f234-a9b7-435b-bbd7-05c3d2e673e6">
+<img width="949" alt="Screenshot 2024-01-29 151206" src="https://github.com/krishi-agrawal/video-call-WEBRTC/assets/129549818/edffebf5-e1ed-4aa6-acd1-1c4c47365c34">
+<img width="928" alt="Screenshot 2024-01-29 152150" src="https://github.com/krishi-agrawal/video-call-WEBRTC/assets/129549818/f6b09cd8-b7ea-4508-bc2f-aa69f71f7e6c">
+<img width="926" alt="Screenshot 2024-01-29 152011" src="https://github.com/krishi-agrawal/video-call-WEBRTC/assets/129549818/5bdd20ab-11e9-4839-8f30-e0dfad743f25">
+
 
 
 <h2>Tech Stack</h2>
